@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*===== Config =====*/
+:root{
+    --primary_color: #0136ee;
+    --background_color: #f4f4f4;
+    --text_color: #b1b1b1;
+  }
+
+  *{
+    font-family: 'Roboto';
+  }
+
+
+  /* Header */
+
+  .__header{
+    padding: 20px 10px;
+    display: flex;
+    background: var(--primary_color);
+    justify-content: flex-end;
+    align-items: center
+  }
+
+  .header__item{
+    color: #fff;
+    margin-right: 20px;
+    display: flex;
+    margin-left: 60px;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .item__icon{
+    margin-right: 5px;
+    position: absolute;
+    font-size: 18px;
+    top: 1px;
+    left: 2px;
+    z-index: 1;
+  }
+
+  .header__item .circle{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -34px;
+    /* margin-right: 25px; */
+    z-index: 0;
+}
+
+
+/* Content */
+
+.__content{
+
+}
+
+.content__img{
+
+}
+
+.content__title{
+
+}
+
+.content__text{
+
+}
+
+.content__form{
+
+}
+
+.form__label{
+
+}
+
+.form__input{
+
+}
+
+.form__btn{
+
+
+}
+
+.content__back{
+    
+}
+

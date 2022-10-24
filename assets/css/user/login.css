@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*===== Config =====*/
+:root{
+    --primary_color: #0136ee;
+    --background_color: #f4f4f4;
+    --text_color: #b1b1b1;
+  }
+
+  *{
+    font-family: 'Roboto';
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  .__body{
+    background-image: linear-gradient(100deg, #f4f4f4 50%, #FFF 50%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+
+  /************* Header *************/
+
+  .__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__logo{
+    width: 50px;
+    margin: 10px;
+  }
+
+  .header__nav{
+    width: calc(35% + 10%);
+    text-align: center;
+  }
+
+  .nav__item{
+    font-size: 25px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: var(--text_color);
+  }
+
+  .item__active{
+    position: relative;
+    color: var(--primary_color);
+  }
+
+  .item__active::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right:0;
+    height: 4px;
+    background-color: var(--primary_color);
+    
+  }
+
+
+  /************* Content *************/
+
+.__content{
+  position: relative;
+}
+
+/**************** Left **************/
+.content__left{
+  top: calc(160px + 50px);
+  left: calc(200px + 50px);
+  position: absolute;
+  text-align: center;
+}
+
+.left__img{
+  width: 184px;
+}
+
+.left__title{
+  font-size: 100px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  color: var(--primary_color);
+}
+
+.left__text{
+  text-align: left;
+  margin: 0;
+  color: var(--primary_color);
+  margin-left: 6px;
+  text-transform: capitalize;
+  margin-top: -8px;
+}
+
+.left__help{
+  position: absolute;
+  bottom: calc(-360px + 10px);
+  left: calc(-229px + 10px);
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--text_color);
+}
+
+/************ Mid ****************/
+.content__mid{
+  top: calc(480px + 50px);
+  left: calc(770px + 50px);
+  position: absolute;
+  text-align: center;
+}
+
+.icon__item{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 250px;
+  position: relative;
+}
+
+
+.icon_item_img{
+  width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 250px;
+    border: 3px solid #d2d2d2;
+    padding: 20px;
+    position: absolute;
+    top: 57px;
+    left: -29px;
+    box-shadow: 1px 1px 10px 0px #d2d2d2;
+}
+
+.icon_item_text{
+  position: absolute;
+  top: -14px;
+  right: 75px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+.icon__text{
+  position: absolute;
+  width: 197px;
+  bottom: calc(-104px + 10px);
+  left: -18px;
+  color: var(--primary_color);
+  text-transform: capitalize;
+}
+
+.icon__text a {
+  color: var(--primary_color);
+}
+
+/***************** Right *****************/
+
+.content__right{
+  top: calc(160px + 50px);
+  right: calc(201px + 50px);
+  position: absolute;
+  width: 325px;
+  
+}
+
+.right__title{
+  font-size: 40px;
+  margin: 0;
+  color: var(--primary_color);
+  text-transform: capitalize;
+}
+
+.right__text{
+  font-size: 18px;
+  color: var(--text_color);
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.right__form{
+  margin-top: 90px;
+  margin-left: 20px;
+}
+
+.right__form form{
+  width: 80%;
+  position: relative;
+}
+
+.form__input{
+  display: flex;
+  flex-direction: column;
+}
+
+.label__field{
+  color: var(--text_color);
+  margin-bottom: 5px;
+}
+
+.input__field{
+  border: 0;
+  border-bottom: 1px solid;
+  margin-bottom: 38px;
+  padding:8px;
+  outline: none;
+  font-size: 16px;
+}
+.right__form form .password{
+  margin-bottom: -25px !important;
+}
+
+
+.form__check{
+  position: relative;
+}
+
+.check__field{
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: #000;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #000;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: 107px;
+}
+
+.check__field::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #000;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+.check__field:checked::before {
+  transform: scale(1);
+}
+
+
+.check__text{
+  position: absolute;
+  right: 0;
+  color: var(--primary_color);
+}
+
+
+.form__submit{
+  position: absolute;
+  bottom: -232px;
+  left: -12px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.submit__btn{
+  padding: 12px 100px;
+  border-radius: 10px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  border: 0;
+  background: var(--primary_color);
+  color: #fff;
+}
+
+.btn__forgot{
+  color: red;
+}
+
+
+/****************************** Responsive ******************************/
+/*
+**
+  *** Mobile S ***
+**
+*/
+@media screen and (max-width: 320px) {
+/************* Header *************/
+.header__logo{
+  width: 41px
+}
+
+.header__nav{
+  margin-right: -18px;
+}
+
+.nav__item{
+  font-size: 16px;
+  margin-right: 13px;
+}
+
+/************* Content *************/
+
+/********* Left *********/
+.content__left{
+  top: 70px;
+  left: 68px;
+}
+
+.left__img{
+  width: 90px;
+}
+
+.left__title{
+  font-size: 37px;
+  letter-spacing: 12px;
+  margin-top: -16px;
+}
+
+.left__text{
+  margin-left: 1px;
+  margin-top: -5px;
+  font-size: 10px;
+}
+
+.left__help{
+bottom: -510px;
+left: -70px;
+font-size: 15px;
+}
+
+/************ Mid ****************/
+.content__mid{
+  top: 542px;
+  left: 57px;
+}
+
+.icon__item{
+width: 100px;
+height: 100px;
+}
+
+
+.icon_item_img{
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  top: 30px;
+  left: -15px;
+}
+
+.icon_item_text{
+top: -76px;
+right: 42px;
+font-size: 15px;
+}
+
+
+.icon__text{
+  width: 194px;
+  bottom: -43px;
+  left: 59px;
+  font-size: 13px;
+}
+
+
+/***************** Right *****************/
+
+.content__right{
+  top: 229px;
+  right: 59px;
+  width: 178px;
+
+}
+
+.right__title{
+  font-size: 23px;
+}
+
+.right__text{
+  font-size: 13px;
+}
+
+.right__form{
+margin-top: 10px;
+margin-left: 5px;
+}
+
+.right__form form{
+width: 90%;
+}
+
+.label__field{
+margin-bottom: -1px;
+font-size: 15px;
+}
+
+.input__field{
+margin-bottom: 15px;
+font-size: 13px;
+background: 0;
+}
+.right__form form .password{
+margin-bottom: -2px !important;
+}
+
+
+.check__field{
+width: 1em;
+height: 1em;
+right: 69px;
+}
+
+.check__text{
+right: -22px;
+font-size: 13px;
+}
+
+.form__submit{
+bottom: -80px;
+left: -8px;
+}
+
+.submit__btn{
+padding: 6px 48px;
+font-size: 16px;
+margin-bottom: 2px;
+}
+.btn__forgot{
+  font-size: 13px;
+}
+
+}
+
+
+
+/*
+**
+  *** Mobile M ***
+**
+*/
+@media screen and (max-width: 375px) and (min-width: 320px) {
+  /************* Header *************/
+.header__logo{
+  width: 41px
+}
+
+.header__nav{
+  margin-right: -18px;
+}
+
+.nav__item{
+  font-size: 16px;
+  margin-right: 13px;
+}
+
+/************* Content *************/
+
+/********* Left *********/
+.content__left{
+  top: 38px;
+  left: 89px;
+}
+
+.left__img{
+  width: 110px;
+}
+
+.left__title{
+  font-size: 40px;
+  letter-spacing: 12px;
+  margin-top: -16px;
+}
+
+.left__text{
+  margin-left: 1px;
+  margin-top: -5px;
+  font-size: 11px;
+}
+
+.left__help{
+bottom: -518px;
+left: -91px;
+font-size: 15px;
+}
+
+/************ Mid ****************/
+.content__mid{
+  top: 542px;
+  left: 98px;
+}
+
+.icon__item{
+width: 100px;
+height: 100px;
+}
+
+
+.icon_item_img{
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  top: 30px;
+  left: -15px;
+}
+
+.icon_item_text{
+top: -76px;
+right: 42px;
+font-size: 15px;
+}
+
+
+.icon__text{
+  width: 194px;
+  bottom: -43px;
+  left: 70px;
+  font-size: 13px;
+}
+
+
+/***************** Right *****************/
+
+.content__right{
+  top: 224px;
+  right: 54px;
+  width: 225px;
+
+}
+
+.right__title{
+  font-size: 25px;
+}
+
+.right__text{
+  font-size: 13px;
+}
+
+.right__form{
+margin-top: 10px;
+margin-left: 5px;
+}
+
+.right__form form{
+width: 90%;
+}
+
+.label__field{
+margin-bottom: -1px;
+font-size: 15px;
+}
+
+.input__field{
+margin-bottom: 15px;
+font-size: 13px;
+background: 0;
+}
+.right__form form .password{
+margin-bottom: -2px !important;
+}
+
+
+.check__field{
+width: 1em;
+height: 1em;
+right: 69px;
+}
+
+.check__text{
+right: -22px;
+font-size: 13px;
+}
+
+.form__submit{
+bottom: -80px;
+left: 17px;
+}
+
+.submit__btn{
+padding: 6px 48px;
+font-size: 16px;
+margin-bottom: 2px;
+}
+.btn__forgot{
+  font-size: 13px;
+}
+}
+
+
+/*
+**
+  *** Mobile L ***
+**
+*/
+@media screen and (max-width: 425px) and (min-width: 375px) {
+
+   /************* Header *************/
+.header__logo{
+  width: 41px
+}
+
+.header__nav{
+  margin-right: -18px;
+}
+
+.nav__item{
+  font-size: 16px;
+  margin-right: 13px;
+}
+
+/************* Content *************/
+
+/********* Left *********/
+.content__left{
+  top: 38px;
+  left: 100px;
+}
+
+.left__img{
+  width: 120px;
+}
+
+.left__title{
+  font-size: 50px;
+  letter-spacing: 12px;
+  margin-top: -16px;
+}
+
+.left__text{
+  margin-left: 1px;
+  margin-top: -5px;
+  font-size: 12px;
+}
+
+.left__help{
+bottom: -483px;
+left: -91px;
+font-size: 15px;
+}
+
+/************ Mid ****************/
+.content__mid{
+  top: 562px;
+  left: 116px;
+}
+
+.icon__item{
+width: 100px;
+height: 100px;
+}
+
+
+.icon_item_img{
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  top: 30px;
+  left: -15px;
+}
+
+.icon_item_text{
+top: -76px;
+right: 42px;
+font-size: 15px;
+}
+
+
+.icon__text{
+  width: 194px;
+  bottom: -28px;
+  left: 99px;
+  font-size: 13px;
+}
+
+
+/***************** Right *****************/
+
+.content__right{
+  top: 224px;
+  right: 84px;
+  width: 225px;
+
+}
+
+.right__title{
+  font-size: 25px;
+}
+
+.right__text{
+  font-size: 13px;
+}
+
+.right__form{
+margin-top: 10px;
+margin-left: 5px;
+}
+
+.right__form form{
+width: 90%;
+}
+
+.label__field{
+margin-bottom: -1px;
+font-size: 15px;
+}
+
+.input__field{
+margin-bottom: 15px;
+font-size: 13px;
+background: 0;
+}
+.right__form form .password{
+margin-bottom: -2px !important;
+}
+
+
+.check__field{
+width: 1em;
+height: 1em;
+right: 69px;
+}
+
+.check__text{
+right: -22px;
+font-size: 13px;
+}
+
+.form__submit{
+bottom: -80px;
+left: 17px;
+}
+
+.submit__btn{
+padding: 6px 48px;
+font-size: 16px;
+margin-bottom: 2px;
+}
+.btn__forgot{
+  font-size: 13px;
+}
+
+}
+
+
+
+/*
+**
+  *** Tablet ***
+**
+*/
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  
+}
+
+
+
+@media screen and (max-width: 950px) and (min-width: 768px) {}
+
+
+
+/*
+**
+  *** Labtop ***
+**
+*/
+@media screen and (max-width: 1024px) and (min-width: 950px){}
+
+
+
+/*
+**
+  *** 4k ***
+**
+*/
+@media screen and (max-width: 1440px) and (min-width: 1024px){}
+
