@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>Forgot Password</title>
+    <title>Reset Password</title>
     <!-- Icon Logo -->
     <link rel="icon" href="../../assets//images/logo/logo_user.png" type="image/x-icon">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <!-- Link Css -->
-    <link rel="stylesheet" href="../../assets/css/user/forgot.css">
+    <link rel="stylesheet" href="../../assets/css/user/reset.css">
 </head>
 <body>
     <header class="__header">
@@ -36,15 +36,21 @@
     
     <main class="__content text-center">
         <img class="content__img" src="../../assets/images/icon/forgot_passowd.png" alt="">
-        <h2 class="content__title">Forgot Password</h2>
+        <h2 class="content__title">Reset Password</h2>
         <p class="content__text">Enter the Email address associated with your account.</p>
         <form action="" class="content__form">
             <div class="mb-3 form__feild">
-                <label class="form__label" id="email_label" for="email">Email</label>
-                <input placeholder="Type Your Email" id="email" name="email" type="email" class="form__input" />
+                <input placeholder="Verification Code"  type="text" class="form__input" />
             </div>
+            <div class="mb-3 form__feild">
+                <input placeholder="New Password" type="text" class="form__input" />
+            </div>
+            <div class="mb-3 form__feild">
+                <input placeholder="ConfirmNew Password"  type="text" class="form__input" />
+            </div>
+            
             <div class="mb-3 mt-4">
-                <button class="form__btn" type="submit">Next</button>
+                <button class="form__btn" type="submit">Reset Password</button>
             </div>
         </form>
         <a class="content__back" href="">
