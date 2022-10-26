@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*===== Config =====*/
+:root{
+    --primary_color: #0136ee;
+    --background_color: #f4f4f4;
+    --text_color: #b1b1b1;
+  }
+
+  *{
+    font-family: 'Roboto';
+  }
+
+
+  /* Header */
+
+  .__header{
+    padding: 20px 10px;
+    display: flex;
+    background: var(--primary_color);
+    justify-content: flex-end;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .header__item{
+    color: #fff;
+    margin-right: 16px;
+    display: flex;
+    margin-left: 60px;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .item__icon{
+    margin-right: 5px;
+    position: absolute;
+    font-size: 18px;
+    top: 1px;
+    left: 2px;
+    z-index: 1;
+  }
+
+  .header__item .circle{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -34px;
+    /* margin-right: 25px; */
+    z-index: 0;
+}
+
+
+/* Content */
+
+.__content{
+  margin-bottom: 50px;
+  padding-bottom: 1px;
+}
+
+/* section */
+.__section{
+  margin: 80px 30px;
+}
+
+.section_nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 65px;
+}
+
+.section_nav .section__title{
+  font-size: 35px;
+  opacity: 0.5;
+  margin-bottom: 100px;
+}
+.icon__search{
+  width: 30px;
+}
+
+/* Content Experiences */
+
+.item__experience{
+  padding: 20px;
+  /* border: 1px solid #c5c5c5; */
+  width: 70%;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__up{
+  display: flex;
+  justify-content: space-between;
+}
+.experience__up .contan{
+  display: flex;
+}
+
+.up__img{
+  width: 85px !important;
+  height: 100px;
+  border-radius: 50%;
+  /* margin: 24px 20px; */
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.up__info{
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.up__info .name{
+  font-size: 25px;
+  font-weight: 900;
+  color: #0043ff;
+  margin-bottom: 1px;
+}
+
+.up__info .follow{
+  font-size: 26px;
+  /* opacity: 0.3; */
+  color: #698eb8;
+}
+
+.up__rate{
+  margin-top: 70px;
+  font-size: 31px;
+  margin-left: 55px;
+  font-weight: 900;
+}
+
+.up__time{
+  font-size: 25px;
+    width: 170px;
+    opacity: 0.3;
+    position: relative;
+}
+.up__time span{
+  position: absolute;
+    bottom: 0;
+}
+
+.experience__mid{
+  margin: 10px 163px;
+}
+
+.mid__text{
+  font-size: 25px;
+  opacity: 0.6;
+}
+
+.mid__text .bluelight{
+  color: #0043ff;
+  font-weight:900;
+}
+
+.experience__down{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.down__details{
+  margin-left: 163px;
+  font-size: 20px;
+}
+
+.down__icons{
+  display: flex;
+  margin-right: 135px;
+}
+
+.down__icons .icon{
+  margin-left: 6px;
+  position: relative;
+}
+
+.down__icons .icon i{
+  font-size: 28px;
+  margin-left: 92px;
+  opacity: 0.3;
+}
+
+.down__icons .icon span{
+  font-size: 18px;
+  position: absolute;
+  top: 2px;
+  left: 135px;
+  color: #4f8ed5;
+}
+
+.page{
+  display: flex;
+  justify-content: space-between;
+}
+
+.page__right{
+  width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 70px;
+}
+
+.right_follow{
+  padding: 0px 22px;
+  background: #0043ff;
+  border-radius: 35px;
+  /* color: #fff; */
+  margin-top: -82px;
+  margin-right: -50px;
+  margin-bottom: 50px;
+}
+
+.right_follow a{
+  color: #fff;
+  font-size: 25px;
+}
+
+.right_details{
+  padding: 15px;
+    border: 1px solid #8f8f8f;
+    margin-bottom: 30px;
+}
+
+.detail_text{
+  font-size: 20px;
+}
+
+.detail_text span{
+  color: #4f8ed5;
+}
+
+.detail_btn{
+  float: right;
+    color: #4f8ed5;
+}
+
+
+
+
+/* Footer */
+
+.__footer{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 37px;
+}
+
+.footer__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    padding: 60px;
+    border: 0;
+    background: #f3f3f3;
+    border-radius: 52px;
+}
+
+.footer_item a{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer_item i{
+    font-size: 40px;
+    opacity: 0.5;
+}
+
+.footer_item .logo{
+    width: 150px;
+    margin-top: -90px;
+    padding: 20px;
+    border-radius: 50%;
+    background: #f3f3f3;
+}
+
+
+
+
+
