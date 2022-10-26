@@ -33,6 +33,9 @@
     text-decoration: none;
   }
 
+  .header__item:hover{color: rgb(184, 181, 181);}
+  
+
   .item__icon{
     margin-right: 0.7%;
     position: absolute;
@@ -516,7 +519,7 @@
 }
 
 .item__supplier{
-    width: 580px;
+    width: 520px;
     height: 200px;
     padding: 15px;
     border: 1px solid #7e7e7e;
@@ -624,7 +627,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 46px;
+    margin-top: 30px;
 }
 
 .down__details{
