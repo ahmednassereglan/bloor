@@ -6,8 +6,9 @@
     --text_color: #b1b1b1;
   }
 
+  
   *{
-    font-family: 'Roboto';
+    font-family: 'Segoe UI';
   }
 
 
@@ -361,7 +362,8 @@
 
 .offer__img{
     margin: auto 0;
-    width: 700px !important;
+    width: 600px;
+    height: 275px;
     border: 1px solid #a3a3a3;
     padding: 15px;
     border-radius: 15px;
@@ -371,17 +373,35 @@
 }
 
 .offer__img .image{
-    width: 650px;
-    height: 289px;
+    width: 560px;
+    height: 240px;
+    margin-top: -40px;
 }
 
 .offer__img .rate__offer{
     position: absolute;
     bottom: 20px;
     left: 0;
-    padding: 6px 25px;
+    width: 140px;
+    height: 44px;
+    padding: 1px 5px;
     background: #d40000;
-    color: #d1d1d1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.offer__img .rate__offer .rate__num{
+    font-size: 12px;
+}
+.offer__img .rate__offer .rate__code{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.offer__img .rate__offer .rate__code span{
+    font-weight: 900;
 }
 
 .offer__info{

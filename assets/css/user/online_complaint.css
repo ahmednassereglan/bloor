@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*===== Config =====*/
+:root{
+    --primary_color: #0136ee;
+    --background_color: #f4f4f4;
+    --text_color: #b1b1b1;
+
+    --unnamed-color-f2f2f2: #F2F2F2;
+    --unnamed-color-0136ee: #0136EE;
+    --unnamed-color-f7f7f7: #F7F7F7;
+    --unnamed-color-d1d1d1: #D1D1D1;
+    --unnamed-color-3869a1: #3869A1;
+    --unnamed-color-00244d: #00244D;
+    --unnamed-color-1e6fcc: #1E6FCC;
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-000000: #000000;
+    --unnamed-color-b1b1b1: #B1B1B1;
+    --unnamed-color-d40000: #D40000;
+    --unnamed-color-707070: #707070;
+  }
+
+  *{
+    font-family: 'Segoe UI';
+  }
+/* 
+  body{
+    background-color: var(--background_color);
+  } */
+
+  /* Header */
+
+  .__header{
+    padding: 20px 10px;
+    display: flex;
+    background: var(--primary_color);
+    justify-content: flex-end;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .header__item{
+    color: #fff;
+    margin-right: 16px;
+    display: flex;
+    margin-left: 60px;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .header__item:hover{
+    color: rgb(212, 212, 212);
+  }
+  .header__item:hover .circle{
+    border: 2px solid rgb(212, 212, 212);
+  }
+
+  .item__icon{
+    margin-right: 5px;
+    position: absolute;
+    font-size: 18px;
+    top: 0px;
+    left: 2px;
+    z-index: 1;
+  }
+
+  .header__item .circle{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -34px;
+    /* margin-right: 25px; */
+    z-index: 0;
+}
+
+
+/* logo & search */
+
+.logo__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 3vw;
+
+}
+.logo__content .logo{
+    width: 3.5vw;
+}
+.logo__content .icon__search{
+    width: 1.7vw;
+  }
+
+
+  /* content */
+
+.__content{
+  width: 89%;
+  margin: auto;
+  display: flex;
+  position: relative;
+  
+}
+
+.left__content{
+  margin-left: 1.5625vw;
+  margin-top: 0.52083vw;
+}
+
+.left__content .left__title{
+  text-transform: capitalize;
+  color: var(--primary_color);
+  font-weight: bold;
+  font-size: 2.4vw;
+  width: 24.47916vw;
+}
+
+.left__content .left__text{
+  text-transform: capitalize;
+  color: #D1D1D1;
+  font-weight: 400;
+  font-size: 1.2vw;
+  margin: 3.125vw 0px;
+  width: 28.64583vw;
+  text-shadow: inset 3px 3px 6px #00000029;
+}
+
+.left__content .left__form{
+text-align: center;
+}
+
+.left__form .form__textarea{
+  width: 28.64583vw;
+  display: block;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: inset 5px 5px 6px #00000029;
+  border: 0.5px solid #A5A5A5;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.left__form .form__textarea::-webkit-input-placeholder {
+  color: #D1D1D1;
+  font-size: 0.78125vw;
+}
+
+.left__form .form__btn{
+  margin-top: 2vw;
+  padding: 0.52083vw 3.64583vw;
+  background: #0136EE 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
+  border: 0;
+  font-size: 1.04166vw;
+  text-transform: capitalize;
+  border-radius: 14px;
+}
+
+.right__image{
+    width: 88.697916vw;
+    height: 46.875vw;
+    position: absolute;
+    top: -6.25vw;
+    bottom: 0;
+    left: -1.04167vw;
+    right: 0;
+    z-index: -1;
+}
+
+
+/* Footer */
+
+.__footer{
+  width: 85%;
+  margin: auto;
+  margin-bottom: 37px;
+  margin-top: 7vw;
+}
+
+.footer__nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 5.2083vw;
+  padding: 0.78125vw 3.125vw;
+  background: #F3F3F3 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #E9E9E9;
+  border-radius: 30px;
+  margin: auto;
+}
+
+.footer_item .footer_btn{
+  text-decoration: none;
+  color: #000;
+}
+
+.footer_item  .footer_btn .footer_icon{
+  font-size: 1.822vw;
+  opacity: 0.5;
+}
+.footer_item  .footer_btn .footer_icon:hover{
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer_item .logo{
+  width: 7.03125vw;
+  margin-top: -1.5625vw;
+  padding: 1.0416vw;
+  border-radius: 50%;
+  background: #f3f3f3;
+}
+
+
+
+
+
+
+
+
