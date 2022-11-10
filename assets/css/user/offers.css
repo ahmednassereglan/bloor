@@ -19,6 +19,19 @@
     --unnamed-color-707070: #707070;
   }
 
+  
+.yellow{
+    color: #ffc107;
+}
+.blue{
+    color: #000cff;
+}
+
+.white{
+    color: #c5c5c5;
+}
+
+
   *{
     font-family: 'Segoe UI';
   }
@@ -212,156 +225,187 @@ color: #888;
 
 /* offers */
 
-
 .item__offer{
-    padding: 15px;
+    padding: 0.7817vw;
     border: 1px solid #c5c5c5;
     width: 97%;
-    height: 430px;
+    height: 22.4075vw;
     display: flex;
     flex-direction: row;
     margin: auto;
+    height: 21.730vw;
+    position: relative;
+    margin-top: 1.5625vw;
 }
 
-.offer__img{
+.item__offer .offer__img{
     margin: auto 0;
-    width: 700px !important;
+    width: 30.172vw;
+    height: 14.3304vw;
     border: 1px solid #a3a3a3;
-    padding: 15px;
-    border-radius: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding: 0.78166vw;
+    border-radius: 0.78166vw;
+    margin-left: 0.78166vw;
+    margin-right: 0.78166vw;
     position: relative;
 }
 
-.offer__img .image{
-    width: 650px;
-    height: 289px;
+.item__offer .offer__img .image{
+    width: 28.40vw;
+    height: 12.5065vw;
+    margin-top: -40px;
 }
 
-.offer__img .rate__offer{
+.item__offer .offer__img .rate__offer{
     position: absolute;
-    bottom: 20px;
+    bottom: 1.04221vw;
     left: 0;
-    padding: 6px 25px;
+    width: 7.295466vw;
+    height: 2.29286vw;
+    padding: 0.052110vw 0.26055vw;
     background: #d40000;
-    color: #d1d1d1;
-}
-
-.offer__info{
-    margin: auto;
-    height: 370px;
-    margin-left: 35px;
-    margin-right: 25px;
-    width: 600px;
-}
-
-.info__title{
-    color: #0043ff;
-    font-weight: 700;
-    font-size: 30px;
-    font-family: sans-serif;
-}
-
-.info__date{
-    opacity: 0.4;
-    font-weight: 700;
-}
-
-.info__text{
-    margin-top: 20px;
-    opacity: 0.4;
-    margin-bottom: 35px;
-}
-
-
-.info__car{
-
-}
-
-.car_up{
-    margin-bottom: 0;
-    font-weight: 900;
-    font-size: 25px;
-}
-
-.car_up div i{
-    margin-right: 15px;
-}
-
-.car_down{
-    opacity: 0.3;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.info__price{
-    margin-top: 25px;
-}
-
-
-.info__price .title{
-    font-size: 25px;
-    font-weight: 600;
-    opacity: 0.2;
-    margin-right: 10px;
-}
-
-
-.info__price .price{
-    font-size: 30px;
-    font-weight: 900;
-}
-
-
-.info__price .offer{
-    font-size: 22px;
-    text-decoration: line-through;
-    color: #e56161;
-    margin-left: 7px;
-}
-
-.offer_details{
-    width: 325px;
-    font-size: 25px;
-    position: relative;
-}
-
-.offer_details a{
-    position: absolute;
-    bottom: 10px;
-    right: 0;
-    color: #698eb8;
-}
-
-.offer_review{
-    width: 205px;
+    color: #fff;
     display: flex;
     flex-direction: column;
+    
+}
+
+.item__offer .offer__img .rate__offer .rate__num{
+    font-size: 0.62533vw;
+}
+.item__offer .offer__img .rate__offer .rate__code{
+    font-size: 0.937989vw;
+    font-weight: 100;
+}
+
+.item__offer .offer__img .rate__offer .rate__code span{
+    font-weight: 900;
+}
+
+.item__offer .offer__info{
+    margin: auto;
+    height: 19.2809vw;
+    margin-left: 1.82387vw;
+    margin-right: 1.30276vw;
+    width: 34.9140vw;
+}
+
+.item__offer .offer__info .info__title{
+    color: #B1B1B1;
+    font-weight: bold;
+    font-size: 1.35487vw;
+}
+
+.item__offer .offer__info .info__date{
+    color: #B1B1B1;
+    font-size: 0.72955vw;
+    font-weight: normal;
+}
+
+.item__offer .offer__info .info__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.042209vw;
+    height: 12.71496vw;
+}
+
+.item__offer .offer__info .info__details .detail__desc{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.52110vw;
+    
+}
+
+.item__offer .offer__info .info__details .detail_title{
+    width: 18%;
+    margin-right: 2.13653vw;
+    /* flex: 15%; */
+    font-size: 1.0943vw;
+    color: #B1B1B1;
+}
+
+.item__offer .offer__info .info__details .detail__desc .desc__text{
+    margin-left: 0.46899vw;
+    margin-bottom: 0;
+    color: #D1D1D1;
+}
+
+
+.item__offer .offer__info .info__details .detail__added{
+    display: flex;
+}
+.item__offer .offer__info .info__details .detail__added .added__person{
+    display: flex;
+    flex-direction: row;
+}
+.item__offer .offer__info .info__details .detail__added .added__person .person{
+    width: 1.30276vw;
+    height: 1.5633142vw;
+    border-radius: 50%;
+}
+.item__offer .offer__info .info__details .detail__added .added__person .person_info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.04221vw;
+}
+.item__offer .offer__info .info__details .detail__added .added__person .person_info .name{
+    font-size: 0.937989vw;
+    font-weight: 400;
+    margin-bottom: 0.26055vw;
+    color: #B1B1B1;
+}
+.item__offer .offer__info .info__details .detail__added .added__person .person_info .number ,
+.item__offer .offer__info .info__details .detail__added .added__person .person_info .no{
+    font-size: 0.937989vw;
+    color: #D1D1D1;
+}
+
+
+.item__offer .offer__info .info__details .detail__price{
+    display: flex;
+    flex-direction: row;
+}
+
+.item__offer .offer__info .info__details .detail__price .price_info .price{
+    color: #B1B1B1;
+    font-size: 1.45909vw;
+    font-weight: bold;
+}
+.item__offer .offer__info .info__details .detail__price .price_info .offer{
+    color: #D40000;
+    text-decoration: line-through;
+    margin-left: 0.2605vw;
+}
+.item__offer .offer_request{
+    display: flex;
     align-items: flex-end;
 }
 
-.review__rate{
-    font-size: 30px;
-    font-weight: 900;
+.item__offer .offer_request .request__btn{
+    background: #0136EE 0% 0% no-repeat padding-box;
+    border-radius: 14px;
+    padding: 0.6253vw 4.16883vw;
+    font-size: 1.0943vw;
+    text-decoration: none;
+    color: #fff;
 }
 
-
-.review__adding{
-    font-size: 30px;
-    color: #698eb8;
-}
-
-.review__icons{
+.item__offer .offer__rate{
     display: flex;
-    flex-direction: column;
-    margin: auto 0;
+    flex-direction: row;
 }
 
+.item__offer .offer__rate .icon{
+    font-size: 1.56331vw;
+}
 
-.review__icons .icon{
-    width: 55px !important;
-    margin-bottom: -5px;
+.item__offer .offer__rate span{
+    color: #B1B1B1;
+    font-weight: bold;
+    font-size: 1.51120vw;
+    margin-left: 0.26055vw;
+    margin-top: -0px;
 }
 
 
