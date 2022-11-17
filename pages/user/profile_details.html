@@ -14,6 +14,25 @@
     <link rel="stylesheet" href="../../assets/css/user/profile_details.css">
 </head>
 <body>
+    <div class="s_overlay"></div>
+    <div class="list_add_opinion">
+        <div class="person_info">
+            <img src="../../assets/images/avatar/person1.jpg" alt="" class="image">
+            <h3 class="name">Jihad Mohammed</h3>
+        </div>
+        <div class="form_add_opinion">
+            <form class="opinin_form" action="">
+                <textarea placeholder="Type your opinion...………….." name="" id="" cols="30" rows="10"></textarea>
+                <input id="add_profile_attach" class="input" type="file" name="image">
+                <span onclick="document.getElementById('add_profile_attach').click()" class="attach"><i class="far fa-paperclip icon"></i> Attach file</span>
+                <input type="checkbox" class="check__field" name="" id="">
+                <button class="btn_submit" type="submit">Publish</button>
+            </form>
+        </div>
+    </div>
+
+
+
     <div class="__background"></div>
     <header class="__header">
         <a class="header__item" href="">
@@ -35,10 +54,10 @@
     <div class="logo__content">
         <img class="logo" src="../../assets/images/logo/logo_user.png" alt="">
         <div class="icons">
-            <a href="" class="item">
+            <a class="item" id="open_profile_opinion">
                 <i class="fas fa-plus icon"></i>
             </a>
-            <a href="" class="item">
+            <a href="edit_profile.html" class="item">
                 <i class="fas fa-pencil-alt icon"></i>
             </a>
             <a href="" class="item">

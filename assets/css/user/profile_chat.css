@@ -60,11 +60,24 @@ body{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+position: relative;
 }
 
 input[type=number]::-webkit-outer-spin-button, 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+.s_overlay{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    z-index: 5;
+    display:none;
 }
 
 
@@ -250,6 +263,12 @@ z-index: -1;
 }
 
 
+
+
+
+
+
+
 /* Content */
 
 
@@ -396,6 +415,7 @@ z-index: -1;
     flex-direction: column;
     display: none;
     transition: all .5s ease-in-out;
+    position: relative;
 }
 
 .chat_details .chat_person .messages{
@@ -471,6 +491,16 @@ z-index: -1;
     
 }
 
+.chat_details .chat_person .rate_review{
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    color: #0136EE;
+    font-size: 21px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 
 .chat_details .chat_person .send_form_msg{
@@ -536,6 +566,152 @@ z-index: -1;
 }
 
 
+.rate_a_review{
+    position: absolute;
+    width: 964px;
+    height: 735px;
+    z-index: 6;
+    right: 500px;
+    top: 300px;
+    padding-bottom: 15px;
+    border: 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 6px #00000029;
+    border-radius: 21px;
+    display: none;
+}
+.rate_a_review .close{
+    position: absolute;
+    top:-29px;
+    right:-12px;
+    padding:1px 15px;
+    font-size:33px;
+    font-weight: bold;
+    color: #0136EE;
+    border-radius: 50%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    cursor: pointer;
+}
+.rate_a_review .title{
+    color: #000000;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+    font-weight: bold;
+}
+.rate_a_review .the_form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: auto;
+}
+.rate_a_review .the_form .label_form{
+    color: #333333;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.rate_a_review .the_form .comment{
+    height: 131px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+}
+
+.rate_a_review .the_form .rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    font-size: 65px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    height: 81px;
+    margin-left: 86px;
+    margin-bottom: 50px;
+  }
+
+  .rate_a_review .the_form .rating::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    /* left: 0; */
+    width: 433px;
+    height: 93px;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    left: -83px;
+  }
+  
+  .rate_a_review .the_form .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .rate_a_review .the_form .rating label:last-child {
+    position: static;
+  }
+  
+  .rate_a_review .the_form .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .rate_a_review .the_form .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .rate_a_review .the_form .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .rate_a_review .the_form .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .rate_a_review .the_form .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .rate_a_review .the_form .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rate_a_review .the_form .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  .rate_a_review .the_form .rating label:last-child .icon {
+    color: #000;
+  }
+  
+  .rate_a_review .the_form .rating:not(:hover) label input:checked ~ .icon,
+  .rate_a_review .the_form .rating:hover label:hover input ~ .icon {
+    color: #ffc107;
+  }
+  
+  .rate_a_review .the_form .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #ffc107;
+  }
+
+  .rate_a_review .the_form .send_review{
+    letter-spacing: 0.5px;
+    color: #0136EE;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 
 
 

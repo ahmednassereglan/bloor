@@ -18,7 +18,7 @@
 <body>
     <!-- Header -->
     <header class="__header">
-        <a class="header__item" href="">
+        <a class="header__item" href="pages/user/profile_details.html">
             <i class="item__icon far fa-user-circle"></i>
             <span class="item__text">Profile</span>
         </a>
@@ -50,15 +50,34 @@
                 <span class="circle"></span>
                 <span class="list_text">Contact Us</span>
             </a>
-            <a href="" class="item__list">
+            <a href="pages/user/faqs.html" class="item__list">
                 <span class="circle"></span>
                 <span class="list_text">FAQs</span>
             </a>
-            <a href="" class="item__list">
+            <a href="pages/user/classification.html" class="item__list">
                 <span class="circle"></span>
                 <span class="list_text">Classification Instructions</span>
             </a>
         </div>
+    </div>
+    <div class="downlist__footer">
+        <span class="close">X</span>
+        <span class="tringle"></span>
+        <div class="lists">
+            <a href="pages/user/search_offers.html" class="item__list">
+                <span class="circle"></span>
+                <span class="list_text">Offers</span>
+            </a>
+            <a href="pages/user/search_experience.html" class="item__list">
+                <span class="circle"></span>
+                <span class="list_text">Experiences</span>
+            </a>
+            <a href="pages/user/search_reviews.html" class="item__list">
+                <span class="circle"></span>
+                <span class="list_text">Reviews</span>
+            </a>
+        </div>
+        <a class="done">Done</a>
     </div>
     <main class="__content">
         <div class="content__home">
@@ -75,21 +94,21 @@
         </div>
         
         <div class="content__cards">
-            <a class="hiddding" href="pages/user/reviews.html"></a>
+            <!-- <a class="hiddding" href="pages/user/reviews.html"></a> -->
             <h2 class="cards__title">Explore Best Car Rating</h2>
-            <div class="row __cards">
-                <div class="col-lg-2 col-md-4 __card">
+            <div class="__cards">
+                <div  class="__card" onclick="goToURL('pages/user/search_reviews.html')">
                     <img src="assets/images/icon/ferrari.png" alt="" class="card__logo">
                     <div class="card__name">
                         <span class="name__car">Ferrari</span>
                         <span class="name__num">7,5K units</span>
                     </div>
                     <div class="card__rate">
-                        <i class="fa fa-star yellow" aria-hidden="true"></i>
+                        <i class="icon fa fa-star yellow" aria-hidden="true"></i>
                         <span>4.7</span>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 __card">
+                <div class="__card">
                     <img src="assets/images/icon/mercedes.png" alt="" class="card__logo">
                     <div class="card__name">
                         <span class="name__car">Mercedes</span>
@@ -100,7 +119,7 @@
                         <span>4.7</span>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 __card">
+                <div class="__card">
                     <img src="assets/images/icon/peugeot.png" alt="" class="card__logo">
                     <div class="card__name">
                         <span class="name__car">Peugeot</span>
@@ -112,7 +131,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-4 __card">
+                <div class="__card">
                     <img src="assets/images/icon/porsche.png" alt="" class="card__logo">
                     <div class="card__name">
                         <span class="name__car">Porsche</span>
@@ -123,9 +142,8 @@
                         <span>4.7</span>
                     </div>
                 </div>
-            </div>
-            <div class="row __cards">
-                <div class="col-lg-2 col-md-4 __card">
+
+                <div class="__card">
                     <img src="assets/images/icon/volkswagen.png" alt="" class="card__logo">
                     <div class="card__name">
                         <span class="name__car">Volkswagen</span>
@@ -136,7 +154,7 @@
                         <span>4.7</span>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 __card">
+                <div class="__card">
                     <img src="assets/images/icon/toyota.png" alt="" class="card__logo">
                     <div class="card__name">
                         <span class="name__car">Toyota</span>
@@ -147,7 +165,7 @@
                         <span>4.7</span>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 __card">
+                <div class="__card">
                     <img src="assets/images/icon/bmw.png" alt="" class="card__logo">
                     <div class="card__name">
                         <span class="name__car">BMW</span>
@@ -159,7 +177,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-4 __card">
+                <div class="__card">
                     <img src="assets/images/icon/hyundai.png" alt="" class="card__logo">
                     <div class="card__name">
                         <span class="name__car">Hyundai</span>
@@ -170,9 +188,8 @@
                         <span>4.7</span>
                     </div>
                 </div>
-
-
             </div>
+            
             <img class="shape_path" src="assets/images/gallary/Path.png" alt="">
         </div>
 
@@ -446,7 +463,7 @@
                 </a>
             </div>
             <div class="footer_item">
-                <a href="" class="footer_btn">
+                <a id="open_footer_search" class="footer_btn">
                     <i class="fas fa-search footer_icon"></i>
                 </a>
             </div>

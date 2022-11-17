@@ -60,6 +60,7 @@ body{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+position: relative;
 }
 
 input[type=number]::-webkit-outer-spin-button, 
@@ -74,6 +75,125 @@ height: 24.0625vw;
 position: absolute;
 z-index: -1;
 }
+
+
+
+.overlay{
+    position: absolute;
+    top: 183px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    z-index: 5;
+    display:none;
+}
+.notif_profile{
+    position: absolute;
+    width: 921px;
+    /* height: 524px; */
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    /* opacity: 1 !important; */
+    z-index: 6;
+    right: 70px;
+    top: 200px;
+    padding-bottom: 15px;
+    border: 0;
+    display: none;
+  }
+  .notif_profile .close{
+    position: absolute;
+    top:-29px;
+    left:-12px;
+    padding:1px 15px;
+    font-size:33px;
+    font-weight: bold;
+    color: #0136EE;
+    border-radius: 50%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    cursor: pointer;
+  }
+  .notif_profile .tringle{
+    position: absolute;
+    top: -28px;
+    right: 49px;
+    width: 0;
+    height: 0;
+    border-left: 38px solid transparent;
+    border-right: 38px solid transparent;
+    border-bottom: 34px solid #0136EE;
+  }
+
+  .notif_profile .Title{
+    height: 83px;
+    width: 100%;
+    background: #0136EE 0% 0% no-repeat padding-box;
+    border: 1px solid #0136EE;
+    border-top: 0;
+    color: #FFFFFF;
+    font-size: 30px;
+    /* margin: auto 0; */
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+  }
+
+  .notif_profile .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  .notif_profile .content .notif_day{
+    margin-top: 30px;
+  }
+
+  .notif_profile .content .notif_day .day{
+    color: #B1B1B1;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .notif_profile .content .notif_day .lists{
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .notif_profile .content .notif_day .lists .item__list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .notif_profile .content .notif_day .lists .item__list .circle{
+    background: #0136EE 0% 0% no-repeat padding-box;
+    opacity: 1;
+    /* margin-right: 27px; */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* padding: 4px;*/
+  }
+
+  .notif_profile .content .notif_day .lists .item__list .list_text{
+    color: #D1D1D1;
+    font-size: 28px;
+  }
+
+.notif_profile .content .notif_day .lists .item__list .list_text .notify_person{
+    color: #B1B1B1;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+  .notif_profile .content .notif_day .lists .item__list .time{
+    color: #B1B1B1;
+    font-size: 20px;
+  }
 
 
 

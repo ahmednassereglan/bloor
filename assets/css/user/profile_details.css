@@ -56,11 +56,25 @@ body{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+position: relative;
 }
 
 input[type=number]::-webkit-outer-spin-button, 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+
+.s_overlay{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    z-index: 5;
+    display:none;
 }
 
 
@@ -356,6 +370,118 @@ z-index: -1;
     /* opacity: 0.05; */
     padding: 1.0416667vw 1.5625vw;
     word-break: break-word;
+}
+
+
+
+.list_add_opinion{
+    position: absolute;
+    top: 361px;
+    left: 636px;
+    z-index: 6;
+    width: 886px;
+    /* height: 616px; */
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.list_add_opinion .person_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.list_add_opinion .person_info .image{
+    width: 90px;
+    height: 105px;
+    border-radius: 50%;
+}
+.list_add_opinion .person_info .name{
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.list_add_opinion .form_add_opinion{
+    width: 100%;
+}
+
+.list_add_opinion .form_add_opinion .opinin_form{
+    display: flex;
+    flex-direction: column;
+}
+.list_add_opinion .form_add_opinion .opinin_form textarea{
+    height: 425px;
+    border: 3px dashed #707070;
+}
+
+.list_add_opinion .form_add_opinion .opinin_form textarea::placeholder{
+    padding: 20px;
+    color: #B1B1B1;
+    font-size: 30px;
+
+}
+
+.list_add_opinion .form_add_opinion .opinin_form input[type=file]{
+    padding: 0;
+    visibility:hidden
+}
+.list_add_opinion .form_add_opinion .opinin_form .attach{
+    position: absolute;
+    right: 15px;
+    bottom: 170px;
+    color: #0136EE;
+    font-size: 18px;
+}
+.list_add_opinion .form_add_opinion .opinin_form .attach .icon{
+    color: #707070;
+}
+
+/* checkbox input */
+
+.list_add_opinion .form_add_opinion .opinin_form .check__field{
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: #000;
+    width: 1.2020833vw;
+    height: 1.3020833vw;
+    border: 0.15em solid #000;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 5.28125vw;
+  }
+  
+  .list_add_opinion .form_add_opinion .opinin_form .check__field::before {
+    content: "";
+    width: 0.625vw;
+    height: 0.625vw;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #000;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  }
+
+  .list_add_opinion .form_add_opinion .opinin_form .check__field:checked::before {
+    transform: scale(1);
+  }
+
+.list_add_opinion .form_add_opinion .opinin_form .btn_submit{
+    width: 308px;
+    height: 79px;
+    margin: auto;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    border: 0;
+    background: #0136EE 0% 0% no-repeat padding-box;
+    border-radius: 14px;
+    font-size: 40px;
+    margin-top: 50px;
 }
 
 

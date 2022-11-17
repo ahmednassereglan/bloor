@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../assets/css/user/profile_chat.css">
 </head>
 <body>
+    <div class="s_overlay" id="rate_overlay"></div>
     <div class="__background"></div>
     <header class="__header">
         <a class="header__item" href="">
@@ -38,7 +39,7 @@
             <a href="" class="item">
                 <i class="fas fa-plus icon"></i>
             </a>
-            <a href="" class="item">
+            <a href="edit_profile.html" class="item">
                 <i class="fas fa-pencil-alt icon"></i>
             </a>
             <a href="" class="item">
@@ -178,7 +179,52 @@
                         <img class="icon" src="../../assets/images/icon/sent.png" alt="sent">
                     </span>
                 </form>
+                <span onclick="openRate('supplier1')" class="rate_review">Rate and review ?</span>
             </div>
+
+            <div id="supplier1" class="rate_a_review">
+                <span class="close">X</span>
+                <h1 class="title">Rate and review</h1>
+                <form action="" class="the_form">
+                    <span class="label_form">How Would You Rate This Supplier*</span>
+                    <div class="rating">
+                        <label>
+                          <input type="radio" name="stars" value="1" />
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="2" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="3" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>   
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="4" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="5" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                    </div>
+                    <span class="label_form">Leave A Comment</span>
+                    <textarea class="comment" name="" id="" cols="30" rows="10"></textarea>
+                    <span class="send_review">Done</span>
+                </form>
+            </div>
+
             <div id="chat2" class="chat_person">
                 <div class="messages">
                     <div class="message_item receiver">
@@ -234,6 +280,50 @@
                         <img class="icon" src="../../assets/images/icon/sent.png" alt="sent">
                     </span>
                     
+                </form>
+                <span onclick="openRate('supplier2')" class="rate_review">Rate and review ?</span>
+            </div>
+
+            <div id="supplier2" class="rate_a_review">
+                <span class="close">X</span>
+                <h1 class="title">Rate and review</h1>
+                <form action="" class="the_form">
+                    <span class="label_form">How Would You Rate This Supplier*</span>
+                    <div class="rating">
+                        <label>
+                          <input type="radio" name="stars" value="1" />
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="2" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="3" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>   
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="4" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="5" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                    </div>
+                    <span class="label_form">Leave A Comment</span>
+                    <textarea class="comment" name="" id="" cols="30" rows="10"></textarea>
+                    <span class="send_review">Done</span>
                 </form>
             </div>
         </div>
